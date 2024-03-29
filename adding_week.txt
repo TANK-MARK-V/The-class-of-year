@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>918</width>
+    <height>543</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>918</width>
+    <height>543</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>918</width>
+    <height>543</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Добавление недели</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>210</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вы готовы?</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="adding">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>230</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить неделю</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pupils_secondary">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>20</y>
+      <width>126</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Человек в классе:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="automatick">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>170</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Автозаполнение</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Vhat_checked">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>80</y>
+      <width>100</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Что проверяли&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mistakes_secondary">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>20</y>
+      <width>79</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Нарушений:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="problems">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>100</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="data">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>20</y>
+      <width>33</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Дата&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="date">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>40</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nuls">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>140</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Поставить 0</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>40</y>
+      <width>321</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="secondary">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="names_secondary">
+       <item>
+        <widget class="QLabel" name="label_5a">
+         <property name="text">
+          <string> 5 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5b">
+         <property name="text">
+          <string> 5 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6a">
+         <property name="text">
+          <string> 6 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6b">
+         <property name="text">
+          <string> 6 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6v">
+         <property name="text">
+          <string> 6 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7a">
+         <property name="text">
+          <string> 7 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7b">
+         <property name="text">
+          <string> 7 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7v">
+         <property name="text">
+          <string> 7 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7g">
+         <property name="text">
+          <string> 7 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8a">
+         <property name="text">
+          <string> 8 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8b">
+         <property name="text">
+          <string> 8 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9a">
+         <property name="text">
+          <string> 9 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9b">
+         <property name="text">
+          <string> 9 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10a">
+         <property name="text">
+          <string>10 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_11a">
+         <property name="text">
+          <string>11 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_11b">
+         <property name="text">
+          <string>11 Б</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QFormLayout" name="secondary_paste">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="balls_secondary">
+         <item>
+          <widget class="QLineEdit" name="balls_5a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_5b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_6a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_6b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_6v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_8a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_8b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_9a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_9b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_10a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_11a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_11b"/>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="mists_secondary">
+         <item>
+          <widget class="QLineEdit" name="mist_5a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_5b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_6a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_6b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_6v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_7a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_7b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_7v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_7g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_8a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_8b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_9a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_9b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_10a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_11a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_11b"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="pupils_prime">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>126</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Человек в классе:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mistakes_prime">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>79</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Нарушений:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>311</width>
+      <height>442</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="prime">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="names_prime">
+       <item>
+        <widget class="QLabel" name="label_1a">
+         <property name="text">
+          <string>1 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1b">
+         <property name="text">
+          <string>1 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1v">
+         <property name="text">
+          <string>1 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1g">
+         <property name="text">
+          <string>1 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1d">
+         <property name="text">
+          <string>1 Д</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2a">
+         <property name="text">
+          <string>2 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2b">
+         <property name="text">
+          <string>2 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2v">
+         <property name="text">
+          <string>2 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2g">
+         <property name="text">
+          <string>2 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2d">
+         <property name="text">
+          <string>2 Д</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3a">
+         <property name="text">
+          <string>3 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3b">
+         <property name="text">
+          <string>3 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3v">
+         <property name="text">
+          <string>3 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3g">
+         <property name="text">
+          <string>3 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4a">
+         <property name="text">
+          <string>4 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4b">
+         <property name="text">
+          <string>4 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4v">
+         <property name="text">
+          <string>4 В</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QFormLayout" name="prime_paste">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="balls_prime">
+         <item>
+          <widget class="QLineEdit" name="balls_1a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1d"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2d"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_4a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_4b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_4v"/>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="mists_prime">
+         <item>
+          <widget class="QLineEdit" name="mist_1a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_1b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_1v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_1g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_1d"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_2a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_2b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_2v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_2g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_2d"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_3a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_3b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_3v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_3g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_4a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_4b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="mist_4v"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>918</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

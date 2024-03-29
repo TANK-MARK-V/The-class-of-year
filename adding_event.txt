@@ -1,0 +1,1576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>835</width>
+    <height>541</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>835</width>
+    <height>541</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>835</width>
+    <height>541</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Добавление мероприятия</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="name_prime">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>39</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Класс&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pasting_prime">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Баллы&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="auto_prine">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>134</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Заполнение баллов&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>160</y>
+      <width>92</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Автозаполнение</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="adding">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>230</y>
+      <width>127</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить мероприятие</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>210</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вы готовы?</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="named">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>80</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_name">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>60</y>
+      <width>160</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Введите название мер-тия:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="data">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>86</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Введите дату&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="date">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="maximum">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>110</y>
+      <width>129</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt; font-weight:600;&quot;&gt;Максимальный балл&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="igor">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>130</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>40</y>
+      <width>301</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="secondary">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="names_secondary">
+       <item>
+        <widget class="QLabel" name="label_5a">
+         <property name="text">
+          <string> 5 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_5b">
+         <property name="text">
+          <string> 5 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6a">
+         <property name="text">
+          <string> 6 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6b">
+         <property name="text">
+          <string> 6 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6v">
+         <property name="text">
+          <string> 6 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7a">
+         <property name="text">
+          <string> 7 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7b">
+         <property name="text">
+          <string> 7 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7v">
+         <property name="text">
+          <string> 7 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7g">
+         <property name="text">
+          <string> 7 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8a">
+         <property name="text">
+          <string> 8 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_8b">
+         <property name="text">
+          <string> 8 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9a">
+         <property name="text">
+          <string> 9 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9b">
+         <property name="text">
+          <string> 9 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10a">
+         <property name="text">
+          <string>10 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_11a">
+         <property name="text">
+          <string>11 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_11b">
+         <property name="text">
+          <string>11 Б</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QFormLayout" name="secondary_paste">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="balls_secondary">
+         <item>
+          <widget class="QLineEdit" name="balls_5a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_5b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_6a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_6b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_6v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_7g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_8a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_8b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_9a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_9b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_10a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_11a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_11b"/>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="auto_secondary">
+         <item>
+          <widget class="QComboBox" name="choise_5a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_5b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_6a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_6b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_6v">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_7a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_7b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_7v">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_7g">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_8a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_8b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_9a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_9b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_10a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_11a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_11b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>291</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="prime">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="names_prime">
+       <item>
+        <widget class="QLabel" name="label_1a">
+         <property name="text">
+          <string>1 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1b">
+         <property name="text">
+          <string>1 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1v">
+         <property name="text">
+          <string>1 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1g">
+         <property name="text">
+          <string>1 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_1d">
+         <property name="text">
+          <string>1 Д</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2a">
+         <property name="text">
+          <string>2 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2b">
+         <property name="text">
+          <string>2 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2v">
+         <property name="text">
+          <string>2 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2g">
+         <property name="text">
+          <string>2 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2d">
+         <property name="text">
+          <string>2 Д</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3a">
+         <property name="text">
+          <string>3 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3b">
+         <property name="text">
+          <string>3 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3v">
+         <property name="text">
+          <string>3 В</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3g">
+         <property name="text">
+          <string>3 Г</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4a">
+         <property name="text">
+          <string>4 А</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4b">
+         <property name="text">
+          <string>4 Б</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4v">
+         <property name="text">
+          <string>4 В</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QFormLayout" name="prime_paste">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="balls_prime">
+         <item>
+          <widget class="QLineEdit" name="balls_1a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_1d"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_2d"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3v"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_3g"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_4a"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_4b"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="balls_4v"/>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <layout class="QVBoxLayout" name="auto_prime">
+         <item>
+          <widget class="QComboBox" name="choise_1a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_1b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_1v">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_1g">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_1d">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_2a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_2b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_2v">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_2g">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_2d">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_3a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_3b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_3v">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_3g">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_4a">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_4b">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="choise_4v">
+           <item>
+            <property name="text">
+             <string>Не принял участия</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2-ое место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3-ее место</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Остальные места</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="name_secondary">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>10</y>
+      <width>39</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Класс&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="auto_secondary_2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>134</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Заполнение баллов&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pasting_secondary">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>45</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Баллы&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>835</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
